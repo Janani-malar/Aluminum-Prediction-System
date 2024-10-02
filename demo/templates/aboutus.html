@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Aluminum Industry</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/483/483690.png" >
+
+    <style>
+    a{
+    color:white;
+    cursor: pointer;
+    }
+
+    a:hover{
+    color:gray;
+    }
+        *{
+           margin:0;
+           padding:0;
+           box-sizing: border-box;
+           font-family: Arial, sans-serif;
+        }
+
+        body {
+           background-color: #f4f4f4;
+        }
+
+
+.header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #1b2d58;
+    margin: 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.text h1 {
+    color: #1b2d58;
+    font-size: 36px;
+}
+
+.nav li,h1,ul{
+    display: inline;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 50px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.team {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.team h1 {
+    color: #1b2d58;
+    font-size: 36px;
+}
+
+.team h3 {
+    color: #1b2d58;
+    margin: 10px 0;
+}
+
+.team p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.team h4 {
+    color: #1b2d58;
+    font-size: 20px;
+}
+
+
+.detail {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.detail h1 {
+    color: #1b2d58;
+    font-size: 36px;
+}
+
+.detail p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.detail h4 {
+    color: #1b2d58;
+    font-size: 20px;
+}
+
+        footer {
+            background-color: #1b2d58;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+        }
+
+        .footer-column h4{
+            margin-bottom:25px;
+            color:#f4d03f;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: #f4d03f;
+        }
+
+        .footer-bottom {
+            background-color: #14213d;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .footer-bottom a {
+            color: #f4d03f;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 20px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+</style>
+</head>
+<body>
+<section class="header">
+      <nav>
+          <div class="text">
+        <h1 style="color:white;"> The Aluminum Industry</h1>
+          </div>
+          <div class="nav" style="text-align: end;
+    margin-top: -30px;">
+        <ul>
+          <li> <a href="{% url 'index' %}">Home |</a> </li>
+          <li> <a href="{% url 'aboutus' %}">About Us |</a> </li>
+          <li> <a href="{% url 'signuppage' %}">Signup |</a> </li>
+          <li> <a href="{% url 'mainpage' %}">Login |</a> </li>
+          <li> <a href="#contact">Contact Us </a> </li>
+        </ul>
+          </div>
+      </nav>
+    </section>
+
+<section class="hero">
+<div class="team">
+    <h1> A LEGACY OF EXCELLENCE</h1>
+    <h3>MEET THE TEAM BEHIND TAI</h3>
+    <p>TAI- The Aluminium Industry is not just a business; it's a legacy built on dedication, experience and a commitment to customer satisfaction. Our journey began in 1959 when it was founded by Mr. Srinivasan , and today, under the dynamic leadership of Mr. Gajendran a second-generation leader with over 40 years of experience, TAI continues to thrive.</p>
+    <br>
+    <h4>Embracing the Future with the Third Generation:</h4>
+    <p>As our business evolves and expands, it's also welcoming the third generation - Miss. Janani (A MSc. Business graduate from UCD Michael Smurfit Graduate Business School, Ireland and work experience with EY, Dublin). This infusion of fresh ideas and perspectives allows TAI to embrace new-age technologies and systems, improving employee efficiency andelevating customer service and satisfaction.</p>
+
+</div>
+
+<div class="images">
+    <img src="https://img.freepik.com/free-photo/successful-happy-business-team_53876-74892.jpg" alt="team">
+
+</div>
+</section>
+
+<section class="hero">
+<div class="images" style="margin:25px;">
+    <img src="https://st4.depositphotos.com/4836865/39321/i/450/depositphotos_393212636-stock-photo-business-people-team-sitting-meeting.jpg" alt="team">
+</div>
+
+<div class="detail">
+    <h1>OUR DEDICATED TEAM</h1>
+    <P>At the heart of TAI's success is our dedicated and loyal team. In every department, we have passionate individuals who are committed to our vision. We have dedicated sales, dispatch, and customer relationship managers who ensure that your experience with TAI is nothing short of exceptional.</P>
+    <br>
+    <h4>Our Team, Your Advantage</h4>
+    <br>
+    <p>We consider our team to be our most valuable asset, and we believe in harnessing this asset to benefit our customers. With their expertise, dedication, and commitment, our team members are here to serve you, ensuring that you receive the best possible service and solutions.</p>
+</div>
+</section>
+
+<article id="contact">
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <p style="color:#f4d03f;">ALUMINIUM SINCE 2004</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li>Aluminium Rolled Products</li>
+                        <li>Aluminium Ingots and Wire Rods</li>
+                        <li>Aluminium Roofing Sheets</li>
+                        <li>Aluminium Extrusions</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li> <a href="{% url 'index' %}">Home </a> </li>
+                        <li> <a href="#">About Us </a> </li>
+                        <li> <a href="{% url 'signuppage' %}">Signup </a> </li>
+                        <li> <a href="{% url 'mainpage' %}">Login </a> </li>
+                        <li> <a href="#contact">Contact Us </a> </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><i class="fas fa-building"></i> The Aluminium Industry</li>
+                        <li><i class="fas fa-map-marker-alt"></i> No. 143, Thenpathi Road, Thiruverkadu, Chennai – 600060, Tamil Nadu, India.</li>
+                        <li><i class="fas fa-phone"></i> +91 98409 34210</li>
+                        <li><i class="fas fa-phone"></i> +91 90426 55560 / 96772 55570</li>
+                        <li><i class="fas fa-envelope"></i> aluminium.industry@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 THE ALUMINIUM INDUSTRY. All rights reserved. <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+</article>
+</body>
+</html>

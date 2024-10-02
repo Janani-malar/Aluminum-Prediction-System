@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Aluminum Industry</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/483/483690.png" >
+    <style>
+    a{
+    color:white;
+    cursor: pointer;
+    }
+
+    a:hover{
+    color:gray;
+    }
+        *{
+           margin:0;
+           padding:0;
+           box-sizing: border-box;
+           font-family: Arial, sans-serif;
+        }
+
+        body {
+           background-color: #f4f4f4;
+        }
+
+
+.header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #1b2d58;
+    margin: 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.text h1 {
+    color: #1b2d58;
+    font-size: 36px;
+}
+
+.nav li,h1,ul{
+    display: inline;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 50px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.content h1 {
+    color: #1b2d58;
+    font-size: 36px;
+}
+
+.content h3 {
+    color: #ff9900;
+    margin: 10px 0;
+}
+
+.content p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 45%;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.approach {
+    background-color: #1b2d58;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.approach h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.approach p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.feature-box .icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.feature-box h4 {
+    font-size: 18px;
+}
+
+
+.why-choose-us {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.choose-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.choose-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.choose-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.choose-box h4 {
+    font-size: 16px;
+    color: #1b2d58;
+}
+
+
+        footer {
+            background-color: #1b2d58;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+        }
+
+        .footer-column h4{
+            margin-bottom:25px;
+            color:#f4d03f;
+
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: #f4d03f;
+        }
+
+        .footer-bottom {
+            background-color: #14213d;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .footer-bottom a {
+            color: #f4d03f;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 20px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section class="header">
+      <nav>
+          <div class="text">
+        <h1 style="color:white;"> The Aluminum Industry</h1>
+          </div>
+          <div class="nav" style="text-align: end;
+    margin-top: -30px;">
+        <ul>
+          <li> <a href="#">Home |</a> </li>
+          <li> <a href="{% url 'aboutus' %}">About Us |</a> </li>
+          <li> <a href="{% url 'signuppage' %}">Signup |</a> </li>
+          <li> <a href="{% url 'mainpage' %}">Login |</a> </li>
+          <li> <a href="#contact">Contact Us </a> </li>
+        </ul>
+          </div>
+      </nav>
+    </section>
+
+
+
+<section class="hero">
+<div class="content">
+    <h1> THE ALUMINUM INDUSTRY</h1>
+    <h3>Serving Your Aluminium Needs Since 1959.</h3>
+    <p>The Aluminium Industry (TAI), your trusted partner in delivering high-quality aluminium products to industries and consumers. With a legacy dating back to 1959, we take pride in offering premium aluminium solutions that meet your diverse requirements. As stockists for India's premier aluminium producers - Hindalco, Nalco, Vedanta (Balco) and Jindal Aluminium - we ensure excellence and reliability in every product.</p>
+    <a href="{% url 'aboutus' %}" class="btn">Read More</a>
+</div>
+
+<div class="images">
+    <img src="https://amcaluminum.ph/wp-content/uploads/2020/09/The-Different-Types-of-Aluminum-Profiles.jpg" alt="aluminum ingots">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCFNW3ODoY4qvhAjCaZMUSUYf4pEV8WAdnaw&s" alt=" aluminum rolls">
+    <img src="https://taxguru.in/wp-content/uploads/2021/09/Aluminium-rolled-products-or-aluminium-coils-in-storage-area.jpg" alt="aluminum sheet">
+    <img src="https://aaluminum.com/wp-content/uploads/2022/07/aluminum-sheet-bulk-2.jpg" alt="aluminum frame">
+</div>
+</section>
+
+
+    <section class="approach">
+        <div class="container">
+            <h2>OUR APPROACH – CUSTOMER FIRST</h2>
+            <p>We understand your requirements. Our experienced team is dedicated to setting benchmarks in the industry by providing you with Honest & Transparent Services. We are committed to serving you. We like creating WIN – WIN situations and being a part of your success story.</p>
+            <div class="features">
+                <div class="feature-box">
+                    <div class="icon">&#9733;</div> <!-- You can replace with an actual icon image -->
+                    <h4>EXPERIENCED</h4>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">&#9881;</div> <!-- You can replace with an actual icon image -->
+                    <h4>SUPERIOR SERVICE</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>WHY CHOOSE US</h2>
+            <div class="choose-features">
+                <div class="choose-box">
+                    <img src="https://www.iatchennai.com/assets/images/icons/why/material.png" alt="Ready Stock Material">
+                    <h4>READY STOCK MATERIAL</h4>
+                </div>
+                <div class="choose-box">
+                    <img src="https://www.iatchennai.com/assets/images/icons/why/discounts.png" alt="Quantity Discounts">
+                    <h4>QUANTITY DISCOUNTS</h4>
+                </div>
+                <div class="choose-box">
+                    <img src="https://www.iatchennai.com/assets/images/icons/why/price.png" alt="Best Price Assurance">
+                    <h4>BEST PRICE ASSURANCE</h4>
+                </div>
+                <div class="choose-box">
+                    <img src="https://www.iatchennai.com/assets/images/icons/why/delivery.png" alt="Timely Delivery">
+                    <h4>TIMELY DELIVERY</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<article id="contact">
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <p style="color:#f4d03f;"> ALUMINIUM SINCE 1959</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li>Aluminium Rolled Products</li>
+                        <li>Aluminium Ingots and Wire Rods</li>
+                        <li>Aluminium Roofing Sheets</li>
+                        <li>Aluminium Extrusions</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li> <a href="#">Home </a> </li>
+                        <li> <a href="{% url 'aboutus' %}">About Us </a> </li>
+                        <li> <a href="{% url 'signuppage' %}">Signup </a> </li>
+                        <li> <a href="{% url 'mainpage' %}">Login </a> </li>
+                        <li> <a href="#contact">Contact Us </a> </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><i class="fas fa-building"></i> The Aluminium Industry</li>
+                        <li><i class="fas fa-map-marker-alt"></i> No. 143, Thenpathi Road, Thiruverkadu, Chennai – 600060, Tamil Nadu, India.</li>
+                        <li><i class="fas fa-phone"></i> +91 98409 34210</li>
+                        <li><i class="fas fa-phone"></i> +91 90426 55560 / 96772 55570</li>
+                        <li><i class="fas fa-envelope"></i> aluminium.industry@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 THE ALUMINIUM INDUSTRY. All rights reserved. <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+</article>
+
+</body>
+</html>
